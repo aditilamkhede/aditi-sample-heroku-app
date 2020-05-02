@@ -1,3 +1,3 @@
-export DATABASE_URL="postgres://dlmxmuygizaszt:d491690210c2472dd2a7a6da3405fa3ba812a5d487b38391890805519c1146fe@ec2-34-195-169-25.compute-1.amazonaws.com:5432/dcjmrho3d1uknn"
+export DATABASE_URL="postgres://xiulkdulkbsawo:08d43d115b68254f1a6f2b7e6657cbfed484221df206393e44062df49e711397@ec2-54-165-36-134.compute-1.amazonaws.com:5432/dbmphjlak7q6fl"
 # "postgres://localhost:5432/capstone"
 export EXCITED=True
