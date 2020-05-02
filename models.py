@@ -3,13 +3,7 @@ from sqlalchemy import Column, String, Integer, create_engine
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-database_path = os.environ.get('DATABASE_URL')
-from sqlalchemy import Column, String, create_engine
-from flask_sqlalchemy import SQLAlchemy
-import json
-
 database_path = os.environ['DATABASE_URL']
-
 db = SQLAlchemy()
 
 '''
@@ -34,14 +28,17 @@ class Person(db.Model):
 
   id = Column(Integer, primary_key=True)
   name = Column(String)
+  email = Column(String)
   catchphrase = Column(String)
 
-  def __init__(self, name, catchphrase=""):
+  def __init__(self, name, email, catchphrase=""):
     self.name = name
+    self.email = email
     self.catchphrase = catchphrase
 
   def format(self):
     return {
       'id': self.id,
       'name': self.name,
+      'email': self.email,
       'catchphrase': self.catchphrase}
